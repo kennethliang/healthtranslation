@@ -1,0 +1,10 @@
+= simple_form_for project, remote: true do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :project_type, collection: Project.project_types.keys.collect {|t| [t.humanize, t] }, include_blank: false
+
+    = simple_fields_for :document
+    = f.input :from_language, label: 'Translate from'
+    = f.input :to_language, label: 'Translate to'

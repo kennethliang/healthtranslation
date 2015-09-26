@@ -16,7 +16,7 @@ gem 'devise'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem "haml-rails", "~> 0.9"
+gem 'haml-rails', '~> 0.9'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -26,6 +26,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+<<<<<<< HEAD
+=======
+gem 'rest-client'
+
+gem 'paperclip', '~> 4.3'
+
+gem 'whenever', :require => false
+>>>>>>> ce329b8cdea5240827a2fe2cc460c7f4bbefb27c
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -42,6 +50,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
