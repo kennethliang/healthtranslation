@@ -1,0 +1,5 @@
+<% if @project.errors.empty? %>
+$('#project_form').html("<%=j render 'projects/form', project: @project %>")
+<% else %>
+Turbolinks.visit('<%= done_project_path(@project) %>');
+<% end %>

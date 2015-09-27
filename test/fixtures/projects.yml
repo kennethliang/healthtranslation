@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: projects
+#
+#  id               :integer          not null, primary key
+#  name             :string
+#  project_type     :string
+#  from_language_id :integer
+#  to_language_id   :integer
+#  user_id          :integer
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  project_type: MyString
+  from_language_id: 1
+  to_language_id: 1
+  user: 
+
+two:
+  name: MyString
+  project_type: MyString
+  from_language_id: 1
+  to_language_id: 1
+  user: 
