@@ -7,6 +7,10 @@
 # Ignore bundler config.
 /.bundle
 
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+.ruby-*
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
@@ -47,3 +51,6 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+# Ignore rubymine settings
+.idea/
