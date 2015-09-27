@@ -1,19 +1,106 @@
+%header
+  -#.header-content
+  -#  .header-content-inner
+  -#    %h1 5.7% of the Australian population do not speak English at all
+  -#    %hr/
+  -#    %p (ABS 2015)
+  -#    %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
+%section#about.bg-primary
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
 
+        %h1 5.7% of the Australian population do not speak English at all (ABS 2015)
+        %hr/
+        %p Health professionals regularly need to provide important medical advice to patients who do not understand English.
 
+        %h2.section-heading We've got what you need!
+        %hr.light/
+        %p.text-faded We hire medical professionals to transilate your medical advice to the language your patients understand.
+        %a.btn.btn-default.btn-xl{:href => "#"} Get Started!
+%section#services
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Fast and Simple
+        %hr.primary/
+  .container
+    .row
+      .col-lg-4.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+          %h3 Send us your prescription
+          %p.text-muted Simply pass your patients' problems to us, easier than using your iPad
 
-
-%h1 Hello world
-/ Trigger the modal with a button
-%button.btn.btn-info.btn-lg{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"} Open Modal
-/ Modal
-#myModal.modal.fade{:role => "dialog"}
-  .modal-dialog
-    / Modal content
-    .modal-content
-      .modal-header
-        %button.close{"data-dismiss" => "modal", :type => "button"} ×
-        %h4.modal-title Modal Header
-      .modal-body
-        %p Some text in the modal.
-      .modal-footer
-        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+      .col-lg-4.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
+          %h3 Done by the Pros
+          %p.text-muted We have countless medical professionals to translate your medical advice in less than 30 mins
+      .col-lg-4.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
+          %h3 Change lives
+          %p.text-muted The most efficient way to ensure your patients understand your medical advice
+%section#portfolio.no-padding
+  .container-fluid
+    .row.no-gutter
+      .col-lg-4.col-sm-6
+        %a.portfolio-box{:href => "#"}
+          %img.img-responsive{:alt => "", :src => "images/portfolio/1.jpg"}/
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Pharmacy
+              .project-name
+                Chemist Warehouse Chatswood
+      .col-lg-4.col-sm-6
+        %a.portfolio-box{:href => "#"}
+          %img.img-responsive{:alt => "", :src => "images/portfolio/2.jpg"}/
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Pharmacy
+              .project-name
+                UNSW Research
+      .col-lg-4.col-sm-6
+        %a.portfolio-box{:href => "#"}
+          %img.img-responsive{:alt => "", :src => "images/portfolio/3.jpg"}/
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Nutrition
+              .project-name
+                Bondi Diet & Health
+      .col-lg-4.col-sm-6
+        %a.portfolio-box{:href => "#"}
+          %img.img-responsive{:alt => "", :src => "images/portfolio/4.jpg"}/
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                General Practice
+              .project-name
+                Castle Hill Medical Centre
+      .col-lg-4.col-sm-6
+        %a.portfolio-box{:href => "#"}
+          %img.img-responsive{:alt => "", :src => "images/portfolio/5.jpg"}/
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                General Practice
+              .project-name
+                Castle Hill Medical Centre
+      .col-lg-4.col-sm-6
+        %a.portfolio-box{:href => "#"}
+          %img.img-responsive{:alt => "", :src => "images/portfolio/6.jpg"}/
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Pharmacy
+              .project-name
+                Burwood Chemist Warehouse
+%aside.bg-dark
+  .container.text-center
+    .call-to-action
+      %h2 Bult for medical professional use!
+      %a.btn.btn-default.btn-xl.wow.tada{:href => "#"} Try Now!

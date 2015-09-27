@@ -1,11 +1,20 @@
-%nav.navbar.navbar-inverse.navbar-fixed-top
-  .container
+%nav#mainNav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
     .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav= render 'layouts/navigation_links'
+      %a.navbar-brand.page-scroll{:href => "#page-top"}
+        %img.img-responsive{:alt => "", :src => "images/MedScribe_logo.jpg"}/
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.page-scroll{:href => "#about"} About
+        %li
+          %a.page-scroll{:href => "#services"} Services
+        %li
+          %a.page-scroll{:href => "#portfolio"} Our Clients
